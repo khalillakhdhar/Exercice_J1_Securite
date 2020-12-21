@@ -15,13 +15,13 @@ text-align:center;
 </head>
 <body>
 <form>
-<table>
+<table align="center">
 <tr><td colspan="2"><h1>Bienvenu à l'application</h1></td></tr>
 <tr><td>Email:</td><td><input type="email" required name="email"></td></tr>
 <tr><td>Mot de passe</td><td><input type="password" required name="mdp"></td></tr>
 <tr><td  colspan="2"><input type="submit" value="se connecter">
 <br>
-<a href="#">Inscription</a>
+<a href="inscrire.jsp">Inscription</a>
 </td></tr>
 </table>
 
