@@ -10,13 +10,24 @@ td
 {
 text-align:center;
  }
+ .error
+ {
+ color:red;
+  }
 
 </style>
 </head>
 <body>
-<form>
+<form action="Auth_Servlet" method="post">
 <table align="center">
-<tr><td colspan="2"><h1>Bienvenu à l'application</h1></td></tr>
+<tr><td colspan="2"><h1>Bienvenu à l'application</h1>
+<span class="error">
+<% if(session.getAttribute("erreur")!=null)
+{
+	%>
+<h4> <%= session.getAttribute("erreur") %></h4>
+<% } %></span>
+</td></tr>
 <tr><td>Email:</td><td><input type="email" required name="email"></td></tr>
 <tr><td>Mot de passe</td><td><input type="password" required name="mdp"></td></tr>
 <tr><td  colspan="2"><input type="submit" value="se connecter">

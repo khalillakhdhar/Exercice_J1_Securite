@@ -7,6 +7,8 @@
 <title>profile</title>
 </head>
 <body>
-
+<h3><%= session.getAttribute("email") %></h3>
+Connecté en tant que: 
+<%=session.getAttribute("nom")+" "+session.getAttribute("prenom") %>
 </body>
 </html>
